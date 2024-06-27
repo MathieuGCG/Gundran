@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Playground</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="control-panel">
+            <button id="reset-flexbox">Reset Flexbox</button>
+            <label for="gap">Gap:</label>
+            <input type="text" id="gap" value="0">
+            <label for="flex-direction">Flex Direction:</label>
+            <button id="row" class="flex-direction">Row</button>
+            <button id="column" class="flex-direction">Column</button>
+            <label for="justify-content">Justify Content:</label>
+            <button id="start" class="justify-content">Start</button>
+            <button id="center" class="justify-content">Center</button>
+            <button id="end" class="justify-content">End</button>
+            <button id="space-between" class="justify-content">Space Between</button>
+            <button id="space-around" class="justify-content">Space Around</button>
+            <button id="space-evenly" class="justify-content">Space Evenly</button>
+            <label for="align-items">Align Items:</label>
+            <button id="start" class="align-items">Start</button>
+            <button id="center" class="align-items">Center</button>
+            <button id="end" class="align-items">End</button>
+            <label for="flex-grow">Flex Grow:</label>
+            <button id="reset" class="flex-grow">Reset</button>
+            <button id="grow-all" class="flex-grow">Grow All</button>
+            <label for="box-1">Box 1:</label>
+            <input type="text" id="box-1" value="0">
+            <label for="box-2">Box 2:</label>
+            <input type="text" id="box-2" value="0">
+            <label for="box-3">Box 3:</label>
+            <input type="text" id="box-3" value="0">
+            
+        </div>
+        <div class="flex-container">
+            <div class="flex-item">1</div>
+            <div class="flex-item">2</div>
+            <div class="flex-item">3</div>
+        </div>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+</html>
