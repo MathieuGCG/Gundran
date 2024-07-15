@@ -1,0 +1,260 @@
+body{
+    background-color: #EEEEEE;
+    scroll-behavior: smooth;
+}
+header {
+    background-color: #151515;
+    position: fixed;
+    width: 90%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 5%;
+    backdrop-filter: blur(10px);
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.name h1{
+    margin-left: 30px;
+}
+li {
+    margin-right: 30px;
+}
+a {
+    color: #A91D3A;
+    text-decoration: none;
+}
+a:hover {
+    color: #C73659;
+}
+h1 {
+    color: #A91D3A;
+    font-size: 40px;
+}
+h3{
+    color: #A91D3A;
+    font-size: 30px;
+}
+.home-intro p{
+    color: #151515;
+    font-size: 15px;
+    text-align: justify;
+}
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+.home-img img{
+    float: left;
+    border-radius: 50%;
+    width: 400px;
+    height: auto;
+    margin: 10px;
+}
+.full-bleed{
+    box-shadow: 0 0 0 100vmax #151515;
+    clip-path: inset(0 -100vmax);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 300px 1fr;
+    background-color: #151515;
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+.about-img img {
+    border-radius: 5%;
+    width: 500px;
+    height: auto;
+    margin: 10%;
+    transition: transform 0.3s ease; /* Smooth transition effect */
+}
+
+.about-img img:hover {
+    transform: scale(1.1); /* Enlarge the image on hover */
+}
+.about-me p {
+    color: #EEEEEE;
+}
+
+.services{
+    display: grid;
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+.projects h1{
+    color: #151515;
+    font-size: 4rem;
+    text-align: center;
+}
+.heading span{
+    color: #A91D3A;
+}
+.grid{
+    display: flex;
+    max-width: 80%;
+    justify-content: center;
+    margin: auto;
+}
+.project-grid{
+    margin: 10px;
+    flex: 1 1 calc(33.333% - 20px);
+    background-color: #151515;
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.project-grid:hover {
+    transform: scale(1.05);
+}
+
+.project-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.project-grid p{
+    color: #EEEEEE;
+}
+
+.socmed {
+    background-color: #151515;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100px;
+}
+
+.social {
+    display: flex;
+    gap: 50px;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.social img {
+    width: 42px;
+}
+
+.socmed .copyright {
+    text-align: center;
+    font-size: 16px;
+    color: #EEEEEE;
+    margin-top: auto;
+}
+
+.faq {
+    width: 100%;
+    padding: 20px;
+    background-color: #151515;
+}
+  
+  .questions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+  
+  .question-box {
+    padding: 30px;
+    border: 1px solid #A91D3A;
+    border-radius: 5px;
+    background-color: #151515;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 1000px;
+    transition: background-color 0.3s ease;
+}
+.question-box:hover {
+    background-color: #C73659;
+}
+  .question-box p {
+    margin: 0;
+    font-size: 16px;
+    color: #EEEEEE;
+}
+  .question-box p2{
+    color: #151515;
+    font-size: 16px;
+}
+
+  .contact {
+    background-color: #EEEEEE;
+    color: #EEEEEE;
+    padding: 4rem 9%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+}
+.information {
+    text-align: center;
+    border: 2px solid #A91D3A;
+    border-radius: 10px;
+    padding: 3rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #151515;
+}
+.information h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    color: #C73659;
+}
+.information p {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+.information a {
+    color: #C73659;
+    text-decoration: none;
+}
+.information a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 380px) {
+    /* Your CSS adjustments for screens <= 380px width */
+}
+
+@media (min-width: 381px) and (max-width: 768px) {
+    /* Your CSS adjustments for screens between 381px and 768px width */
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Your CSS adjustments for screens between 769px and 1024px width */
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    /* Your CSS adjustments for screens between 1025px and 1280px width */
+}
+
+@media (min-width: 1281px) and (max-width: 1536px) {
+    /* Your CSS adjustments for screens between 1281px and 1536px width */
+}
+
+@media (min-width: 1537px) {
+    /* Additional CSS adjustments for screens wider than 1536px */
+}
